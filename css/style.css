@@ -1,0 +1,339 @@
+/* Unversal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.main-wrapper{
+    width: 1300px;
+    margin: 0px auto;
+    background-color: #fff;
+
+}
+
+/* Header Navition CSS */
+.main-Header{
+    background-color: #000;
+}
+
+.primary-menu{
+
+}
+
+.primary-menu ul{
+    text-align: center;
+}
+.primary-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.primary-menu ul li a{
+    display: inline-block;
+    color: #ffffffd5;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 50px 40px;
+    font-weight: bold;
+
+    transition: .4s;
+}
+
+.primary-menu ul li:hover > a{
+    color: #fff;
+}
+
+/* Dropdown No One Home */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    border-top: 7px solid #3c72d9;
+
+    transition: .4s;
+}
+.primary-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.primary-menu ul li ul li a{
+    padding: 20px 40px;
+    display: block;
+    background-color: #111;
+    border-bottom: 1px solid #dddddd27;
+ 
+
+}
+
+.primary-menu ul li ul li:hover > a{
+    background-color: #3c72d9;
+    text-indent: -15px;
+
+}
+
+/* Hover Part */
+.primary-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.primary-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+
+    transform: scaleY(1);
+}
+
+
+/* Second level Dropdown CSS */
+.primary-menu ul li ul li{
+    position: relative;
+
+
+}
+.primary-menu ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    width: 300px;
+    background-color: #111;
+
+
+}
+
+/* Second Level Dropdown Hover part */
+.primary-menu ul li ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform-origin: top center ;
+}
+
+.primary-menu ul li ul li:hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+/* Banner Section CSS */
+.banner{
+    background-image: url('https://i.ibb.co/txcXpMD/young-mens.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 250px 20px;
+}
+
+.banner-text{
+    text-align: center;
+}
+
+.banner-text h1{
+    display: inline-block;
+    font-size: 50px;
+    color: #111;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.banner-text h2{
+    margin: 20px 0px;
+    background-color: #fff;
+    padding: 5px;
+    color: #757575;
+}
+.banner-text .btn {
+    font-size: 22px;
+    background-color: red;
+    color: #fff;
+    padding: 15px 32px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+
+    transition: .4s;
+}
+.banner-text .btn:hover{
+    color: #111;
+    background-color: #fbffff;
+    border: 2px solid red;
+}
+
+/* List style Outside CSS */
+.list-style-outside{
+    text-align: center;
+    padding: 60px 5px;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+}
+.list-style-outside h1{
+    margin-bottom: 20px;
+}
+.list-style-outside .outside-content{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.outside-content ul{
+    list-style-position: outside;
+}
+
+.outside-content ul li{
+    padding: 10px 0;
+}
+
+/* List style Inside CSS */
+.list-style-inside{
+    text-align: center;
+    padding: 60px 5px;
+    margin: 30px 0;
+    box-shadow: 2px 2px 20px #ddd;
+}
+.list-style-inside h1{
+    margin-bottom: 30px;
+}
+.list-style-inside .inside-content{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.inside-content ul{
+    list-style-position: inside;
+}
+
+.inside-content ul li{
+    padding: 10px 0;
+}
+
+
+
+/* Email Contact CSS */
+.email-contact{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px 0;
+}
+
+form input{
+    padding: 15px 20px;
+    width: 60%;
+    border: none;
+    border: 2px solid #ff3f3f;
+    font-size: 20px;
+}
+form .sub-btn {
+    border: none;
+    padding: 15px 35px;
+    background-color: #ff3f3f;
+    color: #fff;
+    font-size: 20px;
+    margin-left: -5px;
+    border: 2px solid;
+    border-color: #ff3f3f;
+
+    transition: .4s;
+}
+
+form .sub-btn:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+
+
+/* List Style Type CSS */
+.list-style-type{
+    padding: 60px 5px;
+    margin-top: 40px;
+    border: 5px dotted #ddd;
+}
+
+.list-style-type h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper-box{
+    width: 95%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.box{
+    width: 32%;
+    display: inline-block;
+    list-style-position: inside;
+    padding: 30px 0px; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+.box ul li{
+    padding: 12px 0px;
+}
+
+.box-1 ul{
+    list-style-type: lower-roman;
+}
+.box-2 ul{
+    list-style-type: square;
+}
+.box-3 ul{
+    list-style-type: lower-greek;
+}
+
+
+
+/* Footer Section CSS */
+.footer{
+    text-align: center;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: noen;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.footer ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    background: #5ea5fa;
+    color: #203247;
+    line-height: 40px;
+    border-radius: 50%;
+
+    transition: .4s;
+}
+.footer ul li a:hover{
+    background-color: #fafafd;
+}
